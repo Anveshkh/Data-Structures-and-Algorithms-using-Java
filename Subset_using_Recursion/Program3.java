@@ -1,6 +1,6 @@
 package Subset_using_Recursion;
 
-public class Program2 {
+public class Program3 {
     public static void main(String[] args) {
         skip("", "baccad");
     }
