@@ -1,4 +1,6 @@
-package LinkedList;
+package LinkedList.SinglyLL;
+
+import LinkedList.SinglyLL.LL;
 
 public class Main {
     public static void main(String[] args) {
