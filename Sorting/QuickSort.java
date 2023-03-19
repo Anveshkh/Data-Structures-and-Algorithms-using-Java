@@ -6,6 +6,7 @@ import static Sorting.Swap.swap;
 public class QuickSort {
     public static int Quick(int[] arr, int lb, int ub){
         int pivot = arr[lb];
+
         int p = lb, q = ub;
         while(p<q){
             while(arr[p] <= pivot){
