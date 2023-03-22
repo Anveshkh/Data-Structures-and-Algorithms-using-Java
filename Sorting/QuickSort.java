@@ -10,6 +10,7 @@ public class QuickSort {
         int p = lb, q = ub;
         while(p<q){
             while(arr[p] <= pivot){
+
                 p++;
             }
             while(arr[q] > pivot){
