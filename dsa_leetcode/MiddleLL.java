@@ -1,20 +1,9 @@
 package dsa_leetcode;
 
-public class MiddleLL {
+public class MiddleLL extends LLParent {
 
-    private Node head;
 
-    void insert(int data){
-        Node newNode = new Node(data);
-        if(head == null){
-            head = newNode;
-            return;
-        }
-        newNode.next = head;
-        head = newNode;
-    }
-
-    private int middle(Node head){
+    private static int middle(Node head){
         Node fast = head;
         Node slow = head;
 
@@ -25,38 +14,17 @@ public class MiddleLL {
         return slow.data;
     }
 
-    void display(){
-        if(head == null){
-            System.out.println("Nothing to print");
-            return;
-        }
-        Node temp = head;
-        while(temp != null){
-            System.out.print(temp.data + " -> ");
-            temp = temp.next;
-        }
-        System.out.println("END");
-    }
-
-    class Node{
-        int data;
-        Node next;
-        Node(int data){
-            this.data = data;
-            this.next = null;
-        }
-    }
-
     public static void main(String[] args) {
-        MiddleLL list = new MiddleLL();
-        list.insert(1);
-        list.insert(2);
-        list.insert(3);
-        list.insert(4);
-        list.insert(5);
-        list.insert(6);
-        list.display();
+        LLParent parent = new LLParent();
+        parent.insertLast(1);
+        parent.insertLast(2);
+        parent.insertLast(3);
+        parent.insertLast(4);
+        parent.insertLast(5);
+        parent.insertLast(6);
+        parent.display();
+        middle(parent.head);
 
-        System.out.println(list.middle(list.head));
+        System.out.println(middle(parent.head));
     }
 }
