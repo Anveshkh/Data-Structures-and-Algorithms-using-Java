@@ -6,7 +6,7 @@ public class LLParent  {
 
     public Node head;
 
-    void insertFirst(int data){
+    public void insertFirst(int data){
 
         Node newNode = new Node(data);
         if(head == null){
@@ -17,7 +17,7 @@ public class LLParent  {
         head = newNode;
     }
 
-    void insertLast(int data){
+    public void insertLast(int data){
         Node newNode = new Node(data);
         if(head == null){
             insertFirst(data);
@@ -30,7 +30,7 @@ public class LLParent  {
         temp.next = newNode;
     }
 
-    void display(){
+    public void display(){
         if(head == null){
             System.out.println("Nothing to display i.e List is empty");
             return;
