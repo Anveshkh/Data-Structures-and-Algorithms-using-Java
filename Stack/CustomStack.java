@@ -31,9 +31,7 @@ public class CustomStack {
         }
         return arr[ptr--];
     }
-    private boolean isFull() {
-        return ptr == arr.length-1;
-    }
+
 
     public int peek() throws Exception{
         if(isEmpty()){
@@ -44,7 +42,10 @@ public class CustomStack {
 
     public boolean isEmpty(){
         return ptr == -1;
+    }
 
+    public boolean isFull() {
+        return ptr == arr.length-1;
     }
 
     public void display() throws Exception{
