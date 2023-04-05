@@ -4,8 +4,9 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
 
-public class StockSpanProblem {
+public class StockSpanProblemI {
     static Queue<Integer> stockSpan(int[] nums){
+        System.out.println("jo");
         Stack<Integer> stack = new Stack<>();
         Stack<Integer> index = new Stack<>();
         Queue<Integer> ans = new PriorityQueue<>();
