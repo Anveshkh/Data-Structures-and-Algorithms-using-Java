@@ -5,15 +5,19 @@ public class Summation1ToN {
         System.out.println(sum(1, 5));
     }
 
-    static int sum(int i, int n){
-        if(i == n){
+    static int sum(int i, int n) {
+        if (i == n) {
             return i;
         }
-        int suma = i + sum(i+1, n);
+        int suma = i + sum(i + 1, n);
         return suma;
     }
 
-    static int sum1(int i, int n, int sum){
-        sum(i+1, n, i)
+    static int sum(int num){
+        if(num == 0){
+            return 0;
+        }
+        return num + sum(num-1);
     }
 }
+
